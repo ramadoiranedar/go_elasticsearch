@@ -29,6 +29,7 @@ func (h Handler) Create(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 		return
 	}
+	r.Context()
 
 	res, err := h.service.create(r.Context(), req)
 	if err != nil {
