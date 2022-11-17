@@ -3,7 +3,7 @@ package elasticsearch
 import (
 	"time"
 
-	"github.com/go_elasticsearch/elastic/internal/pkg/storage"
+	"github.com/go_elasticsearch/internal/pkg/storage"
 )
 
 var _ storage.PostStorer = PostStorage{}
