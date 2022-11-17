@@ -12,7 +12,7 @@ import (
 	"github.com/ramadoiranedar/go_elasticsearch/internal/pkg/storage"
 )
 
-var _ storage.PostStorer = PostStorage{}
+// var _ storage.PostStorer = PostStorage{}
 
 type PostStorage struct {
 	elastic ElasticSearch

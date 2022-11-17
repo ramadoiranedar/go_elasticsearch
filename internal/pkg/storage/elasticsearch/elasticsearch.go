@@ -15,6 +15,8 @@ type ElasticSearch struct {
 func New(addresses []string) (*ElasticSearch, error) {
 	cfg := elasticsearch.Config{
 		Addresses: addresses,
+		Username:  "elastic",
+		Password:  "Axw_iW=01Hq0GbETkdy*",
 	}
 
 	client, err := elasticsearch.NewClient(cfg)
